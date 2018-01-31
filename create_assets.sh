@@ -1,3 +1,5 @@
+# Basé sur https://gist.github.com/marcuswestin/6907510
+
 sourceIcon="${1}"
 outputDir="$HOME/Desktop/generated"
 mkdir -p ${outputDir}
