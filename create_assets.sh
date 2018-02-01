@@ -7,62 +7,62 @@ mkdir -p ${outputDir}
 
 
 # iPhone Notification (iOS 7-11) 20pt
-sips -Z 40 --out ${outputDir}/iPhoneNotification-20x20@2x.png "${sourceIcon}"
-sips -Z 60 --out ${outputDir}/iPhoneNotification-20x20@3x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 40x40! -alpha off ${outputDir}/iPhoneNotification-20x20@2x.png
+convert "${sourceIcon}" -resize 60x60! -alpha off ${outputDir}/iPhoneNotification-20x20@3x.png
 
 # iPhone Spotlight (iOS 7-11) 40pt
-sips -Z 80  --out ${outputDir}/iPhoneSpotlight-40x40@2x.png "${sourceIcon}"
-sips -Z 120 --out ${outputDir}/iPhoneSpotlight-40x40@3x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 80x80! -alpha off ${outputDir}/iPhoneSpotlight-40x40@2x.png
+convert "${sourceIcon}" -resize 120x120! -alpha off ${outputDir}/iPhoneSpotlight-40x40@3x.png
 
 # iPhone App (iOS 7-11) 60pt
-sips -Z 120 --out ${outputDir}/iPhoneApp-60x60@2x.png "${sourceIcon}"
-sips -Z 180 --out ${outputDir}/iPhoneApp-60x60@3x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 120x120! -alpha off ${outputDir}/iPhoneApp-60x60@2x.png
+convert "${sourceIcon}" -resize 180x180! -alpha off ${outputDir}/iPhoneApp-60x60@3x.png
 
 # ---------------------------------------------------------------------------
 # iPhone Spotlight/Settings (iOS 5,6/iOS 5-11) 29pt
-sips -Z 58 --out ${outputDir}/iPhoneSpotlightSettings-29x29@2x.png "${sourceIcon}"
-sips -Z 87 --out ${outputDir}/iPhoneSpotlightSettings-29x29@3x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 58x58! -alpha off ${outputDir}/iPhoneSpotlightSettings-29x29@2x.png
+convert "${sourceIcon}" -resize 87x87! -alpha off ${outputDir}/iPhoneSpotlightSettings-29x29@3x.png
 
 # ---------------------------------------------------------------------------
 # iPad Notification (iOS 7-11) 20pt
-sips -Z 20 --out ${outputDir}/iPadNotifications-20x20.png "${sourceIcon}"
-sips -Z 40 --out ${outputDir}/iPadNotifications-20x20@2x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 20x20! -alpha off ${outputDir}/iPadNotifications-20x20.png
+convert "${sourceIcon}" -resize 40x40! -alpha off ${outputDir}/iPadNotifications-20x20@2x.png
 
 # iPad Settings (iOS 5-11) 29pt
-sips -Z 29 --out ${outputDir}/iPadSettings-29x29.png "${sourceIcon}"
-sips -Z 58 --out ${outputDir}/iPadSettings-29x29@2x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 29x29! -alpha off ${outputDir}/iPadSettings-29x29.png
+convert "${sourceIcon}" -resize 58x58! -alpha off ${outputDir}/iPadSettings-29x29@2x.png
 
 # iPad Spotlight (iOS 7-11) 40pt
-sips -Z 40 --out ${outputDir}/iPadSpotlight-20x20.png "${sourceIcon}"
-sips -Z 80 --out ${outputDir}/iPadSpotlight-20x20@2x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 40x40! -alpha off ${outputDir}/iPadSpotlight-40x40.png
+convert "${sourceIcon}" -resize 80x80! -alpha off ${outputDir}/iPadSpotlight-40x40@2x.png
 
 # iPad App (iOS 7-11) 76pt
-sips -Z 76 --out ${outputDir}/iPadApp-76x76.png "${sourceIcon}"
-sips -Z 152 --out ${outputDir}/iPadApp-76x76@2x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 76x76! -alpha off ${outputDir}/iPadApp-76x76.png
+convert "${sourceIcon}" -resize 152x152! -alpha off ${outputDir}/iPadApp-76x76@2x.png
 
 # ---------------------------------------------------------------------------
 # iPad Pro App (iOS 9-11) 83.5pt
-sips -Z 167 --out ${outputDir}/iPadProApp-83.5x83.5@2x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 167x167! -alpha off ${outputDir}/iPadProApp-83.5x83.5@2x.png
 
 # ---------------------------------------------------------------------------
 # App Store (iOS) 1024pt
-sips -Z 1024 --out ${outputDir}/AppStore-1024x1024.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 1024x1024! -alpha off ${outputDir}/AppStore-1024x1024.png
 
 # ---------------------------------------------------------------------------
 # Watch
 # ---------------------------------------------------------------------------
-sips -Z 48 --out ${outputDir}/WatchNotifications-24x24@2x.png "${sourceIcon}"
-sips -Z 55 --out ${outputDir}/WatchNotifications-27.5x27.5@2x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 48x48! -alpha off ${outputDir}/WatchNotifications-24x24@2x.png
+convert "${sourceIcon}" -resize 55x55! -alpha off ${outputDir}/WatchNotifications-27.5x27.5@2x.png
 
-sips -Z 58 --out ${outputDir}/WatchComplicationsSettings-29x29@2x.png "${sourceIcon}"
-sips -Z 87 --out ${outputDir}/WatchComplicationsSettings-29x29@3x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 58x58! -alpha off ${outputDir}/WatchComplicationsSettings-29x29@2x.png
+convert "${sourceIcon}" -resize 87x87! -alpha off ${outputDir}/WatchComplicationsSettings-29x29@3x.png
 
-sips -Z 80 --out ${outputDir}/WatchHomeScreen-40x40@2x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 80x80! -alpha off ${outputDir}/WatchHomeScreen-40x40@2x.png
 
-sips -Z 88 --out ${outputDir}/WatchLongLook-44x44@2x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 88x88! -alpha off ${outputDir}/WatchLongLook-44x44@2x.png
 
-sips -Z 172 --out ${outputDir}/WatchShortLook-86x86@2x.png "${sourceIcon}"
-sips -Z 196 --out ${outputDir}/WatchShortLook-98x98@2x.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 172x172! -alpha off ${outputDir}/WatchShortLook-86x86@2x.png
+convert "${sourceIcon}" -resize 196x196! -alpha off ${outputDir}/WatchShortLook-98x98@2x.png
 
-sips -Z 1024 --out ${outputDir}/WatchAppStore-1024x1024.png "${sourceIcon}"
+convert "${sourceIcon}" -resize 1024x1024! -alpha off ${outputDir}/WatchAppStore-1024x1024.png
 
