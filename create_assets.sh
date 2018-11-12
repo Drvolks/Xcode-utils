@@ -57,12 +57,15 @@ convert "${sourceIcon}" -resize 55x55! -alpha off ${outputDir}/WatchNotification
 convert "${sourceIcon}" -resize 58x58! -alpha off ${outputDir}/WatchComplicationsSettings-29x29@2x.png
 convert "${sourceIcon}" -resize 87x87! -alpha off ${outputDir}/WatchComplicationsSettings-29x29@3x.png
 
-convert "${sourceIcon}" -resize 80x80! -alpha off ${outputDir}/WatchHomeScreen-40x40@2x.png
+convert "${sourceIcon}" -resize 80x80! -alpha off ${outputDir}/WatchHomeScreen-38mm@2x.png
+convert "${sourceIcon}" -resize 88x88! -alpha off ${outputDir}/WatchHomeScreen-40mm@2x.png
+convert "${sourceIcon}" -resize 100x100! -alpha off ${outputDir}/WatchHomeScreen-44mm@2x.png
 
 convert "${sourceIcon}" -resize 88x88! -alpha off ${outputDir}/WatchLongLook-44x44@2x.png
 
-convert "${sourceIcon}" -resize 172x172! -alpha off ${outputDir}/WatchShortLook-86x86@2x.png
-convert "${sourceIcon}" -resize 196x196! -alpha off ${outputDir}/WatchShortLook-98x98@2x.png
+convert "${sourceIcon}" -resize 172x172! -alpha off ${outputDir}/WatchShortLook-38mm@2x.png
+convert "${sourceIcon}" -resize 196x196! -alpha off ${outputDir}/WatchShortLook-40mm@2x.png
+convert "${sourceIcon}" -resize 216x216! -alpha off ${outputDir}/WatchShortLook-44mm@2x.png
 
 convert "${sourceIcon}" -resize 1024x1024! -alpha off ${outputDir}/WatchAppStore-1024x1024.png
 
